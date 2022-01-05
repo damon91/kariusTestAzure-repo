@@ -20,6 +20,6 @@ steps:
     location: 'East Asia'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/damon91/kariusTestAzure-repo/main/CreateWebApp/azuredeploy.json'
-    overrideParameters: '-projectName mypipeline'
+    overrideParameters: '-projectName kariusbbd'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'

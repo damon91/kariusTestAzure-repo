@@ -13,13 +13,13 @@ steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: '免费试用(ef855a37-be80-4187-8c2b-1722e9525101)'
+    azureResourceManagerConnection: 'AzureRmPipeline-conn'
     subscriptionId: 'ef855a37-be80-4187-8c2b-1722e9525101'
     action: 'Create Or Update Resource Group'
-    resourceGroupName: 'AzureRmPipeline-rg'
+    resourceGroupName: 'pipelineTest'
     location: 'East Asia'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/damon91/kariusTestAzure-repo/main/CreateWebApp/azuredeploy.json'
-    overrideParameters: '-projectName testAzure'
+    overrideParameters: '-projectName mypipeline'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
